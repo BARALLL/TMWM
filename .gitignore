@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+*.cpp
+*.txt
+*.mp4
+
+!requirements.txt
+
+# Virtual environments
+.venv
+
+# ML data and artifacts
+data/
+checkpoints/
+scripts/
+logs/
+runs/
+outputs/
+wandb/
+tensorboard/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.npz
+*.npy
+
+# Env / secrets
+.env
+.env.*
+*.secret
+wandb_key.txt
+
+.vscode/
+
+**/tmp/
+**/backups/
