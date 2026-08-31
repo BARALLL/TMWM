@@ -91,7 +91,12 @@ The centerline is a honest weak point of phase 1 and is discussed under Limitati
 
 The agent completes the full track, driving entirely through planning over the learned model, with no policy training and no per-map optimization of any kind. The route, however, is supplied by the centerline. 
 
+![Completion plot](assets/completion_time_distribution.png)
+
 Completion time is around 54s, against an author medal of 39s and top human times near 34s. This is roughly beginner-level and is not competitive with per-map RL agents, which is expected and not the objective.
+
+![Rollout divergence up to 100 steps](assets/rollout_divergence_100_steps.png)
+![Rollout divergence up to 500 steps](assets/rollout_divergence_500_steps.png)
 
 **Rollout divergence over horizon**, the plot of predicted-vs-true state error as a function of unrolled steps, is a measurement that characterizes the model's validity envelope, and it's the number that bounds how deep the planner can usefully search.
 

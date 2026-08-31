@@ -1,0 +1,6 @@
+h5py
+numpy
+pandas
+scipy
+torch==2.6.0
+tqdm
