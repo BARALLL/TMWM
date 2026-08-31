@@ -93,7 +93,7 @@ The agent completes the full track, driving entirely through planning over the l
 
 ![Completion plot](assets/completion_time_distribution.png)
 
-Completion time is around 54s, against an author medal of 39s and top human times near 34s. This is roughly beginner-level and is not competitive with per-map RL agents, which is expected and not the objective.
+Completion time is around 52s, against an author medal of 39s and top human times near 34s. This is roughly beginner-level and is not competitive with per-map RL agents, which is expected and not the objective.
 
 ![Rollout divergence up to 100 steps](assets/rollout_divergence_100_steps.png)
 ![Rollout divergence up to 500 steps](assets/rollout_divergence_500_steps.png)
@@ -107,7 +107,7 @@ Mean position error grows from 0.0145m at K = 1 to 0.385m at K = 32 in a super-l
 
 - **One map.** No cross-map training and no cross-map evaluation. This means; 1 style, 1 geometry, only two surfaces (road and dirt), no behavioral modificator (like engine off or no steering), one car (stadium) out of the 4; out of a very rich set.
 - **A hand-specified line.** Planning is guided by a hand-specified centerline reward. There is no policy training and no reward shaping during model training, but the *planner* is task-engineered, and a substantial part of "knowing where to go" is supplied rather than learned. Replacing it is the main phase-2 objective.
-- **Times are slow.** Completion is around 54 seconds against an author medal of 39 seconds, and best times around 34 seconds.
+- **Times are slow.** Completion is around 52 seconds against an author medal of 39 seconds, and best times around 34 seconds.
 - **No puzzle/hard tracks.** Everything above is a conventional racing track, and arguably a very simple one.
 
 ## Next steps and open questions
